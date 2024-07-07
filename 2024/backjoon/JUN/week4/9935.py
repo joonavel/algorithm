@@ -3,7 +3,7 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 
-def explosion(string):
+def explosion(string: str) -> str:
     stack = []
     length = len(bomb)
     for char in string:

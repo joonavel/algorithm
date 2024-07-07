@@ -5,7 +5,7 @@ input = sys.stdin.readline
 from collections import deque
 
 
-def bfs(k):
+def bfs(k: int) -> bool:
     dq = deque()
     nxt_dq = deque()
     dq.append(k)

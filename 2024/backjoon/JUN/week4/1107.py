@@ -4,7 +4,7 @@ sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 
 
-def solution(target, current):
+def solution(target: str, current: str) -> int:
     # 모든 경우의 수를 탐색한 경우
     if len(target) == len(current):
         return abs(int(target) - int(current)) + len(target)

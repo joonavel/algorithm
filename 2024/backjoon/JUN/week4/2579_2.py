@@ -4,7 +4,7 @@ sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 
 
-def solution(k):    
+def solution(k: int) -> int:    
     dp = [0 for _ in range(n+1)]
     dp[1] = stairs[1]
     if k >= 2:

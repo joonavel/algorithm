@@ -5,7 +5,7 @@ input = sys.stdin.readline
 from collections import Counter, deque
 
 
-def find_NGF():
+def find_NGF() -> None:
     stack = deque()
     stack.append(0)
     for idx in range(1, n):

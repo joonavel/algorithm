@@ -4,7 +4,7 @@ sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 
 
-def binary_search(left, right):
+def binary_search(left: int, right: int) -> int:
     
     while left <= right:
         mid = (left + right) // 2
