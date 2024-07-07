@@ -3,6 +3,7 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 from collections import deque
+from typing import Tuple, List
 
 m, n, h = map(int, input().split())
 box = []
@@ -21,7 +22,7 @@ for f in range(h):
     box.append(filter_)
     
     
-def bfs(start_points):
+def bfs(start_points: Tuple[int, int, int]) -> int:
     # 두개의 deque을 사용함으로써 deque 교체 횟수를 통해 day를 알아낸다. 
     dq = deque()
     nxt_dq = deque()
@@ -77,7 +78,7 @@ def bfs(start_points):
     return day
 
 
-def mature_checking(array3d):
+def mature_checking(array3d: List[List[int]]) -> int:
     flag = 1
     for i in range(h):
         for j in range(n):

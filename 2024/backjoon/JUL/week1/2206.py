@@ -3,8 +3,9 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 from collections import deque
+from typing import List, Optional
 
-def bfs_with_flag(grid):
+def bfs_with_flag(grid: List[int]) -> Optional[int]:
     dq = deque()
     nxt_dq = deque()
     dq.append((0,0,0))

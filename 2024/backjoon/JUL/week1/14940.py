@@ -4,7 +4,7 @@ sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 from collections import deque
 
-def bfs(i, j):
+def bfs(i: int, j: int) -> None:
     dq = deque()
     nxt_dq = deque()
     dq.append((i, j))

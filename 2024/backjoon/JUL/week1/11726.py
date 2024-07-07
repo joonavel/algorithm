@@ -5,7 +5,7 @@ input = sys.stdin.readline
 sys.setrecursionlimit(10**5)
 
 
-def solution(k):
+def solution(k: int) -> int:
     if n <= 1:
         return 1
     if dp[k] > 0:

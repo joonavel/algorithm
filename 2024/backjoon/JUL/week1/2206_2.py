@@ -3,8 +3,9 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 from collections import deque
+from typing import List, Optional
 
-def shortest_path(N, M, matrix):
+def shortest_path(N: int, M: int, matrix: List[str]) -> Optional[int]:
     # 거리 행렬을 -1로 초기화 - 아직 한번도 방문하지 않은 상태
     # z : 0이면 벽을 부수지 않음, 1이면 벽을 부숨
     distances = [[[-1 for _ in range(M)] for _ in range(N)] for _ in range(2)]

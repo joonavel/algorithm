@@ -3,13 +3,13 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 
-def find_parent(k):
+def find_parent(k: int) -> int:
     if parents[k] != k:
         parents[k] = find_parent(parents[k])
     return parents[k]
     
 
-def union(a, b):
+def union(a: int, b: int) -> None:
     pa, pb = find_parent(a), find_parent(b)
     
     if pa > pb:

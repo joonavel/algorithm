@@ -2,8 +2,9 @@
 import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
+from typing import List
 
-def get_prefix_sum(array):
+def get_prefix_sum(array: List[int]) -> int:
     result = [0]
     temp = 0
     for k in array:

@@ -5,7 +5,7 @@ input = sys.stdin.readline
 from collections import deque
 
 
-def bfs(k):
+def bfs(k: int) -> None:
     dq = deque()
     vis[k] = True
     dq.append(k)

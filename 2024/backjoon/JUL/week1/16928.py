@@ -3,9 +3,9 @@ import sys
 sys.stdin = open('data.txt', 'r')
 input = sys.stdin.readline
 from collections import deque
+from typing import Dict
 
-
-def bfs(ladders, snakes):
+def bfs(ladders: Dict[int, int], snakes: Dict[int, int]) -> int:
     dq = deque()
     nxt_dq = deque()
     dq.append(1)
